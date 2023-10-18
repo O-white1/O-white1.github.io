@@ -2,4 +2,4 @@ table, th, td { border: 1px solid; width: 33%; align-self: center;}
 body {background-color: beige;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: small;}
-video {text-align: center;}
+video {text-align: center; color: darkgray;}
