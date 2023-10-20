@@ -5,7 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query Test</title>
     <style>
-        .topnav { overflow: hidden; background: #333}
+        .topnav {
+             overflow: hidden; background: #333;
+             top: 0;
+             left: 0;
+             width: 100%;
+             position: fixed;
+             z-index: 999;
+            }
         .topnav a {
             float: left;
             display: block;
@@ -24,17 +31,24 @@
         @media only screen and (orientation: landscape) {
             body {background: lightblue;}
         }
+        #top {padding-top: 30vh;}
     </style>
 </head>
 <body>
+    <nav class="topnav">
+        <a href="top">Top</a>
+        <a href="bot">Bottom</a>
+        <a href="#">link</a>
+    </nav>
+    <div id="top">
     <h1>Here is my nav bar</h1>
     <p>Media queries allow for responsive resizing of
          elements based on screen width(usually.)</p>
-    
-         <div class="topnav">
-            <a href="#">link</a>
-            <a href="#">link</a>
-            <a href="#">link</a>
-         </div>
+         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sollicitudin tellus nec vulputate maximus. Duis urna ligula, feugiat vitae urna in, mattis egestas lacus. Etiam ac sem non odio aliquam fringilla. Vestibulum non euismod magna. Fusce quis lacus porta, efficitur erat condimentum, consequat erat. Ut porta porttitor orci vitae bibendum. Quisque id consectetur turpis. Vivamus ante nibh, accumsan eget nunc nec, luctus posuere tortor. Nulla tempor, ex ac aliquam congue, erat diam varius risus, a rutrum purus libero eget eros. Nullam a mattis dui.
+         tincidunt eget lectus non convallis. Proin in fringilla nibh. Integer et efficitur libero. Donec tincidunt bibendum lacus non ultricies. Vestibulum at nisl consectetur, gravida arcu vel, blandit eros. Cras eget tempus tellus, ut venenatis tellus. Vestibulum accumsan ultrices aliquet. Nullam pharetra sollicitudin nisl, et convallis sapien ornare et. Nulla facilisi. Nunc blandit nulla vel velit facilisis gravida. Mauris ornare imperdiet efficitur. Maecenas vulputate urna mi, eget suscipit velit tempor eu.</p>
+    </div>
+    <div id="bot">
+        <b>Here is the bottom of the page</b>
+    </div>
 </body>
 </html>
