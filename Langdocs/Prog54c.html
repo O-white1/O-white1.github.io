@@ -12,9 +12,10 @@
     <button onclick="
     var pi = 3.14159;
     pi = Number(pi);
-    var rad = rad
-    var area = (rad * rad) * pi
-    var cric = 
-    ">Calculate Area and Circumference</button>
+    var rad = document.getElementById('rad').value;
+    var area = (rad**2) * pi
+    var circ = 2 * pi * rad
+    document.writeln('Area is ' + area + ' Circumference is: ' + circ);
+    ">Calculate Area and Circumference</button>)
 </body>
 </html>

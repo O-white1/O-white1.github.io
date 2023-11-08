@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Prog52a</title>
+    <style>
+        h1 {text-align: center;}
+        h4 {text-align: center;}
+    </style>
+</head>
+<body>
+    <h1>Calculator</h1>
+    <h4>For simple maths</h4>
+
+    <label for="len">Length:</label>
+    <input type="number" id="len" name="len">
+
+    <label for="wid">Width:</label>
+    <input type="number" id="wid" name="wid">
+
+    <button onclick="
+        var length = document.getElementById('len').value;
+        var width = document.getElementById('wid').value;
+        var area = length * width;
+        var perim = length * 2 + width * 2;
+        document.writeln('Area ' + area + ' Perimeter: ' + perim); // alert can be used in place of document.writeln to  make a pop up.
+    ">Calculate Area amd Perimeter</button>
+</body>
+</html>
