@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kilowatts price</title>
+</head>
+<body>
+    <label for="kw">Kilowatts:</label>
+    <input for="kw" type="number" id="kw"> <br/>
+
+    <script>
+        var kw = document.getElementById("kw");
+        kw = Number(kw);
+        var baserate = kw * 0.0475;
+        baserate = Number(baserate);
+        var surcharge = baserate * .1;
+        surcharge = Number(surcharge);
+        var cityTax = baserate * .03
+        cityTax = Number(cityTax);
+        var total = baserate + surcharge + cityTax
+    </script>
+</body>
+</html>
