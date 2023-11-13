@@ -8,6 +8,8 @@
 <body>
     <label for="kw">Kilowatts:</label>
     <input for="kw" type="number" id="kw"> <br/>
+    <button onclick="doMath()">Calculate</button>
+    <p id="out"></p>
 
     <script>
         var kw = document.getElementById("kw");
@@ -19,6 +21,10 @@
         var cityTax = baserate * .03
         cityTax = Number(cityTax);
         var total = baserate + surcharge + cityTax
+        function doMath {
+            var p = getElementById("out")
+            p.innerHTML = total
+        }
     </script>
 </body>
 </html>
