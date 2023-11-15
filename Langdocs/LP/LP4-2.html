@@ -21,21 +21,30 @@
     <script>
         function calc() {
             var weight = Number(document.getElementById("weight")).value;
-            var height = Number(document/getElementById("height")).value;
+            var height = Number(document.getElementById("height")).value;
             var length = Number(document.getElementById("length")).value;
             var width = Number(document.getElementById("width")).value;
             var volume = Number(length * width * height).value;
-            var volume_yes = true
-            var weight_yes = true
-            var p = (document.getElementById("out"))
+            var volume_yes = true;
+            var weight_yes = true;
+            var p = (document.getElementById("out")); // ATTENTION THURSDAY ME!  consider removing variables of _yes
             if (volume > 100000) {
-                volume_yes = false
+                volume_yes = false;
             }
             if (weight > 27) {
-                weight_yes = false
+                weight_yes = false;
             }
             if (volume_yes == true && weight_yes == true) {
-                p.innerHTML = "Package is okay to ship :)"
+                p.innerHTML = "Package is okay to ship :)";
+            }
+            else if (volume_yes == false && weight_yes == true) {
+                p.innerHTML = "Package is too big :(";
+            }
+            else if (volume_yes == true && weight_yes == false) {
+                p.innerHTML = "Package is too heavy :(";
+            }
+            else if (volume_yes == false && weight_yes == false) {
+                p.innerHTML = "Package is too big and too heavy  >:(";
             }
         }
     </script>
