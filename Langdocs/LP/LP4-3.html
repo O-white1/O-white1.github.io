@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EGGS</title>
+</head>
+<body>
+    <label for="eggs">Number of eggs purchased: </label>
+    <input type="number" id="eggs" name="eggs" min="0"> <br> <br>
+    <button onclick="doMath()">Show pricing</button> <br/> <hr/>
+    <p id="out"></p>
+
+    <script>
+        function doMath() {
+            var eggs = Number(document.getElementById("eggs").value);
+            var dozens = Math.floor(eggs / 12);
+            var out = document.getElementById("out");
+            var price = 0.0;
+            var total = 0.0;
+            remainder = eggs % 12;
+
+            if (dozens > 0 && dozens < 4) {
+                price += 0.50;
+            }
+            else if (dozens >= 4 && dozens < 6) {
+                price += 0.45;
+            }
+            else if (dozens >= 6 && dozens < 11) {
+                price += 0.40;
+            }
+            else if (dozens >= 11) {
+                price += 0.35;
+            }
+            else if (dozens > 11) {
+                price += 0.25;
+            }
+            total = (price * dozens) + (price * remainder);
+            out.innerHTML = "Total cost is $" + total;
+            // every line that does not end with a {, should end with a ;
+
+        }
+
+    </script>
+</body>
+</html>

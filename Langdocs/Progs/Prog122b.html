@@ -12,7 +12,7 @@
         var pay = hrs * 4
         var msg = "Hours %emsp; Pay <br/>";
         while (hrs < 41) {
-            msg += hrs + "&emsp;" + (pay) + "<br/>"
+            msg += hrs + "&emsp;" + (hrs * pay) + "<br/>"
             hrs ++;
         }
         document.getElementById("out").innerHTML = msg;
