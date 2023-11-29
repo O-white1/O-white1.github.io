@@ -23,13 +23,20 @@
     
     <script>
         function calc() {
-            var Principal = document.getElementById("Principal")
-            var Interest = document.getElementById("Interest")
-            var Years = document.getElementById("Years")
-            var MonthlyPay = document.getElementById("MonthlyPay")
+            var p = document.getElementById("Principal")
+            var r = document.getElementById("Interest")
+            var t = document.getElementById("Years")
+            var m = document.getElementById("MonthlyPay")
 
 
 
+
+        }
+        function reset() {
+            document.getElementById("Principal").innerHTML = "";
+            document.getElementById("Interest").innerHTML = "";
+            document.getElementById("Years").innerHTML = "";
+            document.getElementById("MonthlyPay").innerHTML = "";
         }
     </script>
     

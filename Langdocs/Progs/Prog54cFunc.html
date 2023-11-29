@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="rad">Radius:</label>
+    <input type="number" id="rad" name="rad" placeholder="0" required>
+
+    <button onclick="calc()">Calculate</button>
+    <button onclick="reset()">Reset</button>
+
+    <p id="outarea" style="background-color: antiquewhite;"></p>
+    <p id="outperim" style="background-color: antiquewhite;"></p>
+
+    <script>
+        function calc() {
+            var rad = Number(document.getElementById("rad").value);
+            var area = (Math.PI) * (rad **2);
+            var circ = (2 * Math.PI) * rad;
+            document.getElementById('outarea').innerHTML = "Area: " + area
+            document.getElementById('outperim').innerHTML = "Perimeter: " + perim
+        }
+        
+
+        function reset() {
+            document.getElementById("rad").value = "";
+            document.getElementById("outarea").innerHTML = "";
+            document.getElementById("outperim").innerHTML = "";
+        }
+    </script>
+</body>
+</html>
