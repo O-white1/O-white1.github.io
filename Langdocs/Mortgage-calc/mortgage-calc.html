@@ -19,14 +19,21 @@
         <button id="calc" onclick="calc()">Calculate</button>
         <br/>
         <button id="reset" onclick="reset()">Reset</button>
+        <hr/>
+        <br/>
+        <p id="out"></p>
     </div>
     
     <script>
         function calc() {
-            var p = document.getElementById("Principal")
+            var P = document.getElementById("Principal")
             var r = document.getElementById("Interest")
             var t = document.getElementById("Years")
             var m = document.getElementById("MonthlyPay")
+            var n = 12 // months per year
+            var b = P(1+(r/n))**nt - (((m[1+r/n]**nt)-1) / r/n) // Remaining loan balance
+            var output = document.getElementById('out');
+            output.innerText = "$" + b.toFixed(2);
 
 
 
