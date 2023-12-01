@@ -16,9 +16,9 @@
         <input type="number" id="Years" name="Years"> <br/>
         <label>Monthly payment:</label>
         <input type="number" id="MonthlyPay" name="MonthlyPay"> <br/>
-        <button id="calc" onclick="calc()">Calculate</button>
+        <button id="Calculate" onclick="calc()">Calculate</button>
         <br/>
-        <button id="reset" onclick="reset()">Reset</button>
+        <button id="Reset" onclick="reset()">Reset</button>
         <hr/>
         <br/>
         <p id="out"></p>
@@ -26,17 +26,13 @@
     
     <script>
         function calc() {
-            var P = document.getElementById("Principal")
-            var r = document.getElementById("Interest")
-            var t = document.getElementById("Years")
-            var m = document.getElementById("MonthlyPay")
-            var n = 12 // months per year
-            var b = P(1+(r/n))**nt - (((m[1+r/n]**nt)-1) / r/n) // Remaining loan balance
-            var output = document.getElementById('out');
-            output.innerText = "$" + b.toFixed(2);
-
-
-
+            var p = Number(document.getElementById("Principal").value);
+            var r = Number(document.getElementById("Interest").value);
+            var t = Number(document.getElementById("Years").value);
+            var m = Number(document.getElementById("MonthlyPay").value);
+            var n = 12; // months per year
+            var b = (p*(1 + (r/n))**(n*t)) - ((m*((1+ (r/n))**(n*t)-1)) / (r/n)); // Remaining loan balance
+            document.getElementById("out").innerHTML = "Remaining loan balance is:" + " " + "$" + b.toFixed(2);
 
         }
         function reset() {
@@ -44,6 +40,7 @@
             document.getElementById("Interest").innerHTML = "";
             document.getElementById("Years").innerHTML = "";
             document.getElementById("MonthlyPay").innerHTML = "";
+            document.getElementById("out").innerText = "";
         }
     </script>
     
