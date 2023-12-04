@@ -9,7 +9,7 @@
     <script>
         var nums = [];
         for (var lcv = 0; lcv < 400; lcv++) {
-        var n = Math.round(Math.random() * 1000) + min;
+        var n = Math.round(Math.random() * 1000) + 1;
         nums.push(n);
         }
 
@@ -25,7 +25,7 @@
         }
 
         document.writeln("# of numbers >= 500" + gte + "<br/>");
-        document.writeln("# of numbers <>=> 500" + lt + "<br/>");
+        document.writeln("# of numbers => 500" + lt + "<br/>");
         document.writeln("# of numbers >= 500" + nums.length + "<br/>");
         document.writeln(nums);
     </script>
