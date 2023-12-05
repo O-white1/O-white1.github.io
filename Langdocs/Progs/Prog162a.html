@@ -6,13 +6,23 @@
     <title>Prog162a-Factorials</title>
 </head>
 <body>
-    <label>Enter a number</label>
-    <input type="number" for="factnum" name="factnum">
+    <label>Enter a number: </label>
+
+    <input type="number" id="num" name="factnum"> <br/>
+    <button onclick="calc()" id="calc_button">Calculate</button>
+    <br/>
     <label>Factorial: </label>
     <p id="out"></p>
 
     <script>
-        var Number(factnum = document.getElementById(factnum).value);
+        function calc() {
+            var num = Number(document.getElementById("num").value);
+            var f_mul = num * num;
+            for (lcv = 1; lcv < num; lcv++) {
+                num += f_mul;
+            }
+            document.getElementById("out").innerHTML = "num";
+        }
     </script>
 </body>
 </html>
