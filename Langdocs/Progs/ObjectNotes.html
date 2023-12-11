@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes on Objects in JS notation</title>
+</head>
+<body>
+    <script> // Object Notation
+        var hotel = { // , at end of line instead of ; unless in function as shown below
+            name: "Holiday Inn", // JSON = JavaScript Object notation
+            rooms: 50,
+            booked: 30,
+            checkAvailable: function() {
+                return this.rooms - this.booked;
+            }
+        };
+
+        document.write(hotel['name'] + "<br/>");
+        // or
+        document.write(hotel.name + "<br/>");
+
+        document.write("Rooms: " + hotel.rooms + "<br/>");
+        document.write("Available: " + hotel.checkAvailable() + "<br/>");
+
+        //constructor notation: AKA better notation
+        function HotelConstructor(name, rooms, booked) { //Makes a class with names, rooms, and booked
+            this.name = name;
+            this.rooms = rooms;
+            this.booked = booked;
+            this.checkAvailable = function() {
+                this.rooms = this.booked;
+            };
+        }
+
+
+        var hotel2 = new HotelConstructor("Microtel", 25, 5);
+        document.write("Name: " + hotel2.name + "<br/>");
+        document.write("Rooms Available: " + hotel2.checkAvailable() + "<br/>");
+        <hr/>
+
+        //Class Notation: AKA Best Notation
+        class Hotel {
+            // Constructors set up the variables for our objects
+            constructor(name, rooms, booked) {
+                this.name = name; // this. = self. in python
+                this.rooms = rooms;
+                this.booked = booked;
+            }
+            checkAvailable() {
+                return this.rooms - this.booked;
+            }
+        }
+
+        // A class is just a collection of variables and/or functions
+
+        var hotel3 = new Hotel("Super 8", 30, 2); // because it's all under one script, it still takes name, rooms, and booked
+        document.write("Name: " + Hotel3.name + "<br/>");
+        document.write("Rooms available: " + hotel3.checkAvailable() + "<br/>")
+    </script>
+</body>
+</html>
