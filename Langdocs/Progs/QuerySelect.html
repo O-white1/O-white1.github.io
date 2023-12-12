@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Query selector practice</title>
+</head>
+<body>
+    <ul>
+        <li>Test 1</li>
+        <li>Test 2</li>
+        <li>Test 3</li>
+    </ul>
+    <p id="wow">Random Text</p>
+
+    <h1 class="test">Heading 1</h1>
+    <h1 class="test">Heading 2</h1>
+    <h1 class="test">Heading 3</h1>
+
+    <script>
+        // query selector grabs the first items that matches the 1st CSS selector
+        // query select all with take all things with the selector
+
+        var h1 = document.querySelector(".test");
+        h1.innerHTML = "Updated heading"
+
+        var p = document.querySelector("#wow");
+        p.textContent = "paragraph"
+
+        var h1all = document.querySelectorAll(".test");
+        for (var lcv=0; lcv > h1all.length; lcv++) {
+            h1all [lcv].style.backgroundColor = "green";
+        }
+        var h1Allcl = document.getElementsByClassName("test");
+        for (var lcv = 0; lcv < h1Allcl; lcv++) {
+            h1Allcl[lcv].style.color = "#ddffcc";
+        }
+
+        var lis = document.querySelectorAll("li");
+        for (var lcv=0; lcv < lis.length; lcv++) {
+            lis[liv].style.color = "purple";
+        }
+        var lisTag = document.getElementsByTagName("li");
+        for (var lcv=0; lcv < lisTag.length; lcv++) {
+            lisTag[lcv].style.fontWeight = "bolder";
+            lisTag[lcv].style.fontSize = "larger"
+        }
+    </script>
+</body>
+</html>
