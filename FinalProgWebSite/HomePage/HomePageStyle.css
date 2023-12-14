@@ -1,0 +1,14 @@
+#all {
+    background-color: #130002;
+}
+#nav {
+    background-color: #79141B;
+    -webkit-text-fill-color: antiquewhite;
+    border: 8px solid rgb(156, 156, 156);
+    
+}
+#topbox {
+    text-align: center;
+    border: 8px solid rgb(180, 168, 168);
+    -webkit-text-fill-color: white;
+}
