@@ -1,4 +1,4 @@
-#all {
+* {
     background-color: #130002;
 }
 #nav {
@@ -11,4 +11,5 @@
     text-align: center;
     border: 8px solid rgb(180, 168, 168);
     -webkit-text-fill-color: white;
+    background-color: dimgrey;
 }
