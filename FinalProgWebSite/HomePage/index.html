@@ -7,6 +7,12 @@
     <link rel="stylesheet" href="HomePageStyle.css">
 </head>
 <body>
+    <div id="bigright">
+        <h3 class="bigRightText">Test:</h3>
+    </div>
+    <div id="bigleft">
+        <h3 class="bigLeftText">Test:</h3>
+    </div>
     <div id="PageCenter">
         <div id="topbox">
             <h1 class="head">Owen White</h1>
@@ -14,10 +20,19 @@
         <br/>
         <div id="sideleft">
             <h3 class="divnav">About me:</h3>
+            <button class="abtmebtn" onclick="document.getElementById('abtmemodal').showModal();">About me</button>
         </div>
         <div id="sideright">
             <p class="test">Test:</p>
         </div>
     </div>
+
+
+    <dialog id="abtmemodal">
+        <h4>About me:</h4>
+        <p>placeholder</p>
+        <button id="dialogbtn" onclick = "
+            document.getElementById('abtmemodal').close();">Close</button>
+    </dialog>
 </body>
 </html>

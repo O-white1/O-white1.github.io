@@ -16,15 +16,7 @@
         background-color: #884B4C;
     }
     border-radius: 0.75em;
-#bigleft {
-    float: left !important;
-    width: 5%;
-    border: 4px solid rgb(156, 156, 156);
-    border-radius: 0.75em;
-    .bigLeftText {
-        background-color: #AEAEAE;
-    }
-}
+
 }
 #sideleft {
     background-color: #79141B;
@@ -39,6 +31,11 @@
     .divnav {
         background-color: #79141B;
     }
+    .abtmebtn {
+        border: 2px solid white;
+        border-radius: 0.3em;
+        background-color: brown;
+}
 }
 #sideright {
     align-self: right;
@@ -71,3 +68,31 @@
         -webkit-text-fill-color: black;
     }
 }
+#bigleft {
+     
+    text-align: center;
+    float: left !important;
+    border: 4px solid rgb(156, 156, 156);
+    width: 10%;
+    border-radius: 0.75em;
+    height: 600px;
+    background-color: #AEAEAE;
+    
+    .bigLeftText {
+        background-color: #AEAEAE;
+        -webkit-text-fill-color: black;
+    }
+}
+dialog * {
+    opacity: 0.75;
+    background-color: white;
+    align-items: center;
+
+    
+
+    
+}
+dialog {
+    background-color: white;
+}
+
