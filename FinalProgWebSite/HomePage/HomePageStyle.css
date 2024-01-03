@@ -1,5 +1,6 @@
 * {
     background-color: #130002;
+    /* add a font */
 }
 #PageCenter {
     padding-left: 15%;
@@ -25,16 +26,21 @@
     text-align: center;
     color: solid rgb(180, 168, 168);
     width: 35%;
-    height: 400px;
+    height: 200px;
     border-radius: 0.75em;
     float: left;
     .divnav {
         background-color: #79141B;
     }
     .abtmebtn {
-        border: 2px solid white;
+        border: 2px solid rgb(151, 151, 144);
         border-radius: 0.3em;
-        background-color: brown;
+        background-color: rgba(15, 1, 1, 0.746);
+        align-self: bottom;
+
+
+
+
 }
 }
 #sideright {
@@ -87,6 +93,10 @@ dialog * {
     opacity: 0.75;
     background-color: white;
     align-items: center;
+    .dialogbtn {
+        left: 50%;
+        align-self: bottom;
+    }
 
     
 
