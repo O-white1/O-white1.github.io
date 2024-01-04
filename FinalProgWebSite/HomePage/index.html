@@ -19,20 +19,37 @@
         </div>
         <br/>
         <div id="sideleft">
-            <h3 class="divnav">About me:</h3>
+            <h3 class="divnav">About me:</h3 /* to be changed below */>
+            <br/>
+            <br/>
+            <br/> 
+            <br/>
+            <br/>
+            <br/>
             <button class="abtmebtn" onclick="document.getElementById('abtmemodal').showModal();">About me</button>
         </div>
         <div id="sideright">
             <p class="test">Test:</p>
         </div>
+        <div id="undermiddle">
+            <h3>test</h3>
+        </div>
     </div>
 
 
     <dialog id="abtmemodal">
-        <h4>About me:</h4>
-        <p>placeholder</p>
-        <button id="dialogbtn" onclick = "
-            document.querySelector('abtmemodal').close();">Close</button>
+        <h4 class="text">About me:</h4>
+        <p class="text">I am Owen White, A 14 year old highschool freshman at J.A. Craig Highschool Janesville WI,
+            who has taken an academic interest in both music and 
+            computer science.  In music, I am an intermediate level piano student, having been taking private lessons for nearly 4 years now.
+
+        </p>
+        <p class="text">In computer science, I am currently going through the majority of the computer science classes here at my school.
+            These classes are giving me valuable experience with coding languages like JavaScript, Python, and C# as well as making me think critically in a problem solving setting.
+
+        </p>
+        <p class="text">At my school I also participate in some clubs.  My favorite of which being Chess Club, because I have always enjoyed playing the game with friends and family.</p>
+        <button class="dialogbtn" onclick = "document.getElementById('abtmemodal').close();">Close</button>
     </dialog>
 </body>
 </html>
