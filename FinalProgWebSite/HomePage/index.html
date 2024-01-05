@@ -4,52 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="HomePageStyle.css">
+    <link rel="stylesheet" href="HomePageStyle.css" type="text/css">
 </head>
 <body>
-    <div id="bigright">
-        <h3 class="bigRightText">Test:</h3>
-    </div>
-    <div id="bigleft">
-        <h3 class="bigLeftText">Test:</h3>
-    </div>
-    <div id="PageCenter">
-        <div id="topbox">
-            <h1 class="head">Owen White</h1>
+    <main class="wrapper" class="section parallax bg1">
+        <div id="bigright">
+            <h3 class="bigRightText">Test:</h3>
         </div>
-        <br/>
-        <div id="sideleft">
-            <h3 class="divnav">About me:</h3 /* to be changed below */>
-            <br/>
-            <br/>
-            <br/> 
-            <br/>
-            <br/>
-            <br/>
-            <button class="abtmebtn" onclick="document.getElementById('abtmemodal').showModal();">About me</button>
+        <div id="bigleft">
+            <h3 class="bigLeftText">Test:</h3>
         </div>
-        <div id="sideright">
-            <p class="test">Test:</p>
+        <div id="PageCenter">
+            <div id="topbox">
+                <h1 class="head">Owen White</h1>
+            </div>
+            <br/>
+            <div id="sideleft">
+                <h3 class="divnav">About me:</h3 /* to be changed below */>
+                <br/>
+                <br/>
+                <br/> 
+                <br/>
+                <br/>
+                <br/>
+                <button class="abtmebtn" onclick="document.getElementById('abtmemodal').showModal();">About me</button>
+            </div>
+            <div id="sideright">
+                <h6 class="test">Prior Experience:</h6>
+                <p class="test">
+                    <ul class="siderightbody" id="siderightlist">
+                        <li class="siderightbody">4 years of musical experience via private piano lessons.</li>
+                        <br/>
+                        <li class="siderightbody">3 highschool level computer science classes.</li>
+                        <br/>
+                        <li class="siderightbody">Prior work with Web Development and programming softwares.</li>
+                        <br/>
+                        <li class="siderightbody">Prior experience with programming languages JavaScript, and Python, at a beginner level.</li>
+                        <br/>
+                        <li class="siderightbody"></li>
+                    </ul>
+                </p>
+            </div>
+            <div id="undermiddle">
+                <h3>test</h3>
+            </div>
         </div>
-        <div id="undermiddle">
-            <h3>test</h3>
-        </div>
-    </div>
 
 
-    <dialog id="abtmemodal">
-        <h4 class="text">About me:</h4>
-        <p class="text">I am Owen White, A 14 year old highschool freshman at J.A. Craig Highschool Janesville WI,
-            who has taken an academic interest in both music and 
-            computer science.  In music, I am an intermediate level piano student, having been taking private lessons for nearly 4 years now.
+        <dialog id="abtmemodal">
+            <h4 class="text">About me:</h4>
+            <p class="text">I am Owen White, A 14 year old highschool freshman at J.A. Craig Highschool Janesville WI,
+                who has taken an academic interest in both music and 
+                computer science.  In music, I am an intermediate level piano student, having been taking private lessons for nearly 4 years now.
 
-        </p>
-        <p class="text">In computer science, I am currently going through the majority of the computer science classes here at my school.
-            These classes are giving me valuable experience with coding languages like JavaScript, Python, and C# as well as making me think critically in a problem solving setting.
+            </p>
+            <p class="text">In computer science, I am currently going through the majority of the computer science classes here at my school.
+                These classes are giving me valuable experience with coding languages like JavaScript, Python, and C# as well as making me think critically in a problem solving setting.
 
-        </p>
-        <p class="text">At my school I also participate in some clubs.  My favorite of which being Chess Club, because I have always enjoyed playing the game with friends and family.</p>
-        <button class="dialogbtn" onclick = "document.getElementById('abtmemodal').close();">Close</button>
-    </dialog>
+            </p>
+            <p class="text">At my school I also participate in some clubs.  My favorite of which being Chess Club, because I have always enjoyed playing the game with friends and family.</p>
+            <button class="dialogbtn" onclick = "document.getElementById('abtmemodal').close();">Close</button>
+        </dialog>
+
+
+
+
+
+    </main>
 </body>
 </html>
