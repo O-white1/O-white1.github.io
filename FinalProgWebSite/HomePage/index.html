@@ -12,7 +12,7 @@
             <h3 class="bigRightText">Test:</h3>
         </div>
         <div id="bigleft">
-            <h3 class="bigLeftText">Test:</h3>
+            <p class="bigLeftText">References:</p>
         </div>
         <div id="PageCenter">
             <div id="topbox">
@@ -21,13 +21,11 @@
             <br/>
             <div id="sideleft">
                 <h3 class="divnav">About me:</h3 /* to be changed below */>
-                <br/>
-                <br/>
-                <br/> 
-                <br/>
+                <h6 class="divnav">Click to read about me.</h6>
                 <br/>
                 <br/>
                 <button class="abtmebtn" onclick="document.getElementById('abtmemodal').showModal();">About me</button>
+                <button class="reference_button" onclick="reference_modal()">References</button>
             </div>
             <div id="sideright">
                 <h6 class="test">Prior Experience:</h6>
@@ -40,13 +38,8 @@
                         <li class="siderightbody">Prior work with Web Development and programming softwares.</li>
                         <br/>
                         <li class="siderightbody">Prior experience with programming languages JavaScript, and Python, at a beginner level.</li>
-                        <br/>
-                        <li class="siderightbody"></li>
                     </ul>
                 </p>
-            </div>
-            <div id="undermiddle">
-                <h3>test</h3>
             </div>
         </div>
 
@@ -59,17 +52,28 @@
 
             </p>
             <p class="text">In computer science, I am currently going through the majority of the computer science classes here at my school.
-                These classes are giving me valuable experience with coding languages like JavaScript, Python, and C# as well as making me think critically in a problem solving setting.
+                These classes are giving me valuable experience with coding languages like JavaScript and python as well as making me think critically in a problem solving setting.
 
             </p>
             <p class="text">At my school I also participate in some clubs.  My favorite of which being Chess Club, because I have always enjoyed playing the game with friends and family.</p>
             <button class="dialogbtn" onclick = "document.getElementById('abtmemodal').close();">Close</button>
         </dialog>
 
-
-
-
-
     </main>
+    <dialog id="references">
+        <p class="diatext">Some CSS coding from Logrocket.com at <a href="https://blog.logrocket.com/create-parallax-scrolling-css/#:~:text=The%20key%20to%20creating%20the,image%20relative%20to%20the%20viewport".</p>
+        <button id="closer" onclick="closer()">Close</button>
+    </dialog>
+
+
+    <script>
+        function reference_modal() {
+            document.getElementById('references').show()
+        }
+
+        function closer() {
+            document.getElementById('references').close()
+        }
+    </script>
 </body>
 </html>
