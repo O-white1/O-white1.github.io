@@ -161,7 +161,7 @@ dialog  {
 #references {
     color: black;
     background-color: #808080;
-    border: 2px solid #AEAEAE;
+    border: 2px solid #aeaeae;
     border-radius: 1%;
     font-size: xx-small;
     display: absolute;
@@ -171,5 +171,9 @@ dialog  {
     #closer {
         color: black;
         background-color: #AEAEAE;
+        align-self: right;
     }
+}
+#link1 {
+    background-color:#AEAEAE;
 }

@@ -9,10 +9,11 @@
 <body>
     <main class="wrapper" class="section parallax bg1">
         <div id="bigright">
-            <h3 class="bigRightText">Test:</h3>
+            <h3 class="bigRightText"></h3>
+            <button id="link1" onclick="contactme()">Contact me</button>
         </div>
         <div id="bigleft">
-            <p class="bigLeftText">References:</p>
+            <p class="bigLeftText"></p>
         </div>
         <div id="PageCenter">
             <div id="topbox">
@@ -56,12 +57,13 @@
 
             </p>
             <p class="text">At my school I also participate in some clubs.  My favorite of which being Chess Club, because I have always enjoyed playing the game with friends and family.</p>
-            <button class="dialogbtn" onclick = "document.getElementById('abtmemodal').close();">Close</button>
+            <button class="dialogbtn" id="closingbtn" onclick = "document.getElementById('abtmemodal').close();">Close</button>
         </dialog>
 
     </main>
     <dialog id="references">
-        <p class="diatext">Some CSS coding from Logrocket.com at <a href="https://blog.logrocket.com/create-parallax-scrolling-css/#:~:text=The%20key%20to%20creating%20the,image%20relative%20to%20the%20viewport".</p>
+        <p class="diatext">Logrocket.com was used as a reference for some CSS coding. <a href="https://blog.logrocket.com/create-parallax-scrolling-css/#:~:text=The%20key%20to%20creating%20the,image%20relative%20to%20the%20viewport".>Logrocket</href></a>
+            <br/>
         <button id="closer" onclick="closer()">Close</button>
     </dialog>
 
@@ -73,6 +75,10 @@
 
         function closer() {
             document.getElementById('references').close()
+
+        function contactme() {
+            window.location.replace("FinalProgWebSite/ContactMe/contactme.html");
+        }
         }
     </script>
 </body>
