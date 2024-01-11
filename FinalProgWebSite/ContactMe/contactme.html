@@ -4,16 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Me</title>
-    <link href="contactme.css" rel="stylesheet">
+    <style>
+        * {
+            background-color: #130002;
+        }
+.textupper {
+    background:#a7343c;
+}
+.textcontact {
+    background-color: rgb(145, 145, 145);
+}
+.upper {
+    align-items: center;
+    border: 3px solid black;
+    width: 94%;
+    background: #a7343c;
+    color:antiquewhite;
+    border: 2px solid #ffffff;
+    border-radius: 2%;
+}
+h2 {align-items: center;}
+.contact {
+    background-color: rgb(145, 145, 145);
+    align-self: center;
+    width: 94%;
+    height: 75vh;
+    border: 3px solid black;
+    color: black;
+    border: 2px solid white;
+    border-radius: 2%;
+    #contact {
+        align-items: center;
+    }
+}
+button {
+    background-color: antiquewhite;
+    border: 3px solid black;
+    border-radius: 6%;
+}
+input {
+    background-color: #d0c8c8;
+}
+    </style>
 </head>
 <body>
-    <div class="upper">
-        <h2>Contact Me</h2>
-        <p></p>
-    </div>
-    <div class="contact">
-        <p id="contact">Please fill out the sheet below to contact me.</p>
-    </div>
+    <center>
+        <form><div class="upper">
+            <h2 class="textupper">Contact Me</h2>
+            <p class="textupper"></p>
+        </div>
+        <br/>
+        <div class="contact">
+            <p class="textcontact" id="contact">Please fill out the sheet below to contact me.</p>
+            <hr>
+            <hr>
+            <label class="textcontact"> First Name:</label> <br/>
+            <input  type="text" required> <br/>
+            <label class="textcontact">Last Name:</label> <br/>
+            <input  type="text" required> <br/>
+            <label class="textcontact">Email:</label> <br/>
+            <input  type="email" required> <br/>
+            <label class="textcontact">Reason for contact:</label> <br/>
+            <input  type="text" required> <br/>
+            <br/>
+            <button onclick="reset()" id="btn">Submit</button>
+    
+        </div>
+    </form>
+    </center>
 
 
 
