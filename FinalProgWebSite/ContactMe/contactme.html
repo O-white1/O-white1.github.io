@@ -7,6 +7,7 @@
     <style>
         * {
             background-color: #130002;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
         }
 .textupper {
     background:#a7343c;
@@ -59,13 +60,13 @@ input {
             <hr>
             <hr>
             <label class="textcontact"> First Name:</label> <br/>
-            <input  type="text" required> <br/>
+            <input class="in"  type="text" required> <br/>
             <label class="textcontact">Last Name:</label> <br/>
-            <input  type="text" required> <br/>
+            <input class="in" type="text" required> <br/>
             <label class="textcontact">Email:</label> <br/>
-            <input  type="email" required> <br/>
+            <input class="in" type="email" required> <br/>
             <label class="textcontact">Reason for contact:</label> <br/>
-            <input  type="text" required> <br/>
+            <input class="in" type="text" required> <br/>
             <br/>
             <button onclick="reset()" id="btn">Submit</button>
     
@@ -78,7 +79,9 @@ input {
 
 
     <script>
-
+        function reset() {
+            document.getElementsByClassName('in').clear()
+        }
     </script>
 </body>
 </html>

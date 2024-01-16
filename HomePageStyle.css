@@ -1,10 +1,7 @@
 * {
     background-color: #130002;
-    /* add a font */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-
- /*body {
-    /* add background image; */
 
 
 #PageCenter {
@@ -164,7 +161,7 @@ dialog  {
     border: 2px solid #aeaeae;
     border-radius: 1%;
     font-size: xx-small;
-    display: absolute;
+    width: 75%;
     .diatext {
         background: #808080;
     }
@@ -176,4 +173,31 @@ dialog  {
 }
 #link1 {
     background-color:#AEAEAE;
+
+}
+#linkbtn {
+    width: 90%;
+    height: 10%;
+    color: white;
+    font-size: small;
+    text-align: center;
+    background-color: rgb(107, 2, 2);
+    display: flex
+}
+#linky, #linky2 {
+    background-color: #AEAEAE;
+    align-items: center;
+    align-self: center;
+}
+#linkbtn2 {
+    background-color: rgb(172, 29, 29);
+    width: 80%;
+    height: 7.5%;
+    font-size: small;
+    text-align: center;
+    color: white;
+    border-radius: 10%;
+}
+#texto {
+    background-color: lightgrey;
 }

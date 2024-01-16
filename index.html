@@ -10,7 +10,9 @@
     <main class="wrapper" class="section parallax bg1">
         <div id="bigright">
             <h3 class="bigRightText"></h3>
-            <button id="link1" onclick="FinalProgWebSite/ContactMe/contactme.html">Contact me</button>
+            <a id="linky" href="http://127.0.0.1:3000/FinalProgWebSite/ContactMe/contactme.html"><button id="linkbtn">Contact Me</button></a>
+            <br/>
+            <a id="linky2" href="http://127.0.0.1:3000/FinalProgWebSite/ProjectsToday/projects.html"><button id=linkbtn2>Current Projects</button></a>
         </div>
         <div id="bigleft">
             <p class="bigLeftText"></p>
@@ -62,7 +64,7 @@
 
     </main>
     <dialog id="references">
-        <p class="diatext">Logrocket.com was used as a reference for some CSS coding. <a href="https://blog.logrocket.com/create-parallax-scrolling-css/#:~:text=The%20key%20to%20creating%20the,image%20relative%20to%20the%20viewport".>Logrocket</href></a>
+        <p class="diatext">Logrocket.com was used as a reference for some (used or other) CSS coding. <a href="https://blog.logrocket.com/create-parallax-scrolling-css/#:~:text=The%20key%20to%20creating%20the,image%20relative%20to%20the%20viewport".>Logrocket</href></a>
             <br/>
         <button id="closer" onclick="closer()">Close</button>
     </dialog>
@@ -76,9 +78,6 @@
         function closer() {
             document.getElementById('references').close()
 
-        function contactme() {
-            window.location.replace("FinalProgWebSite/ContactMe/contactme.html");
-        }
         }
     </script>
 </body>
