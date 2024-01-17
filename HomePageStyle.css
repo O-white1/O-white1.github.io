@@ -107,6 +107,7 @@
 dialog  {
     * {
         opacity: 0.75;
+        background: tra;
     }
     opacity: 0.99;
     background: radial-gradient(circle, rgba(221,218,218,1) 0%, rgba(175,165,165,1) 39%, rgba(69,67,67,1) 100%);
@@ -115,11 +116,13 @@ dialog  {
 
 }
 .text {
-    background-color: white;
+    background: transparent;
     }
     .dialogbtn {
         align-self: bottom;
-        background-color: white;
+        background: rgb(121,32,32);
+        background: linear-gradient(0deg, rgba(121,32,32,1) 0%, rgba(171,64,64,1) 20%, rgba(182,75,75,1) 61%, rgba(193,109,109,1) 80%, rgba(212,110,110,1) 100%);
+        font-weight: bolder;
     }
 
 .reference_button {
@@ -163,7 +166,7 @@ dialog  {
     font-size: xx-small;
     width: 75%;
     .diatext {
-        background: #808080;
+        background: transparent;
     }
     #closer {
         color: black;
